@@ -1,0 +1,109 @@
+body{
+margin:0;
+font-family: 'Arial';
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+height:100vh;
+overflow:hidden;
+}
+
+.proposal{
+text-align:center;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+}
+
+h1{
+font-size:40px;
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:30px;
+margin:10px;
+cursor:pointer;
+}
+
+.yes{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+position:absolute;
+background:white;
+}
+
+.hearts::before,
+.hearts::after{
+content:"💖 💕 💗 💓 💘";
+font-size:30px;
+position:absolute;
+animation: float 10s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+}
+100%{
+transform:translateY(-10vh);
+}
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:30px;
+}
+
+.polaroid{
+background:white;
+padding:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.polaroid img{
+width:250px;
+}
+
+.caption{
+text-align:center;
+margin-top:10px;
+}
+
+.timeline{
+width:80%;
+margin:auto;
+}
+
+.event{
+background:white;
+margin:30px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
